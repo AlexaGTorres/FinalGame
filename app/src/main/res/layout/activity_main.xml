@@ -17,7 +17,7 @@
         android:textAlignment="center"
         android:textColor="#000000"
         android:textSize="34sp"
-        android:layout_marginTop="40dp"/>
+        android:layout_marginTop="30dp"/>
 
     <TextView
         android:id="@+id/infoText"
@@ -34,14 +34,15 @@
 
     <ImageView
         android:id="@+id/imageView"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/cat"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:layout_marginTop="40dp"
         android:maxHeight="200dp"
-        android:maxWidth="200dp"/>
+        android:maxWidth="200dp"
+        android:layout_marginLeft="110sp"/>
 
     <CheckBox
         android:id="@+id/checkFirst"
@@ -56,7 +57,8 @@
         android:layout_height="wrap_content"
         android:layout_marginLeft="165dp"
         android:layout_marginTop="40dp"
-        android:text="Start!" />
+        android:text="Start!"
+        android:backgroundTint="@color/black"/>
 
 
 </LinearLayout>

@@ -13,4 +13,12 @@
         android:layout_height="wrap_content"
         app:srcCompat="@android:drawable/btn_star_big_on" />
 
+    <Button
+        android:id="@+id/quitButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="317dp"
+        android:text="Quit"
+        android:backgroundTint="@color/black"/>
+
 </RelativeLayout>

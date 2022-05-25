@@ -2,9 +2,11 @@ package com.example.afinal;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
+import android.widget.Button;
 import android.widget.ImageButton;
 import android.widget.ImageView;
 import android.widget.RelativeLayout;
@@ -22,6 +24,7 @@ public class PlayScreen extends AppCompatActivity
     {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_play_screen);
+        configureQuitButton();
 
         myLayout = (RelativeLayout) findViewById(R.id.playScreen);
         imageMove = (ImageView) findViewById(R.id.imageMove);
@@ -44,4 +47,17 @@ public class PlayScreen extends AppCompatActivity
             }//onTouch boolean
         });//onTouchListener
     }
+
+    private void configureQuitButton()
+    {
+        Button quitButton = (Button) findViewById(R.id.quitButton);
+        quitButton.setOnClickListener(new View.OnClickListener()
+        {
+            @Override
+            public void onClick(View view)
+            {
+                startActivity(new Intent(PlayScreen.this, ResultScreen.class));
+            }
+        });
+        }//End quit button handler
 }//End class PlayScreen
