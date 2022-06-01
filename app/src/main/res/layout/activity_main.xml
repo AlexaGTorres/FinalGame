@@ -33,7 +33,7 @@
         android:textSize="20sp" />
 
     <ImageView
-        android:id="@+id/imageView"
+        android:id="@+id/charImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         app:srcCompat="@drawable/cat"
@@ -44,19 +44,20 @@
         android:maxWidth="200dp"
         android:layout_marginLeft="110sp"/>
 
-    <CheckBox
-        android:id="@+id/checkFirst"
+    <Button
+        android:id="@+id/changeButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginLeft="185dp"
-        android:text="" />
+        android:text="Change"
+        android:layout_marginLeft="160dp"
+        android:layout_marginTop="20dp"/>
 
     <Button
         android:id="@+id/buttonPlay"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginLeft="165dp"
-        android:layout_marginTop="40dp"
+        android:layout_marginTop="20dp"
         android:text="Start!"
         android:backgroundTint="@color/black"/>
 
