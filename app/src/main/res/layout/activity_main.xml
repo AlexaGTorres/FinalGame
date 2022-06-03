@@ -36,7 +36,7 @@
         android:id="@+id/charImage"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        app:srcCompat="@drawable/cat"
+        app:srcCompat="@drawable/questionmark"
         android:scaleType="fitCenter"
         android:adjustViewBounds="true"
         android:layout_marginTop="40dp"
