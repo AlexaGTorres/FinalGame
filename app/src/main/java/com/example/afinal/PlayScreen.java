@@ -18,6 +18,7 @@ public class PlayScreen extends AppCompatActivity
     private ImageView imageMove = null;
     private float x;
     private float y;
+    int temp = MainActivity.flag-1;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -46,6 +47,19 @@ public class PlayScreen extends AppCompatActivity
                 return true;
             }//onTouch boolean
         });//onTouchListener
+
+        if (temp == 0)
+        {
+            imageMove.setImageResource(R.drawable.cat);
+        }
+        else if (temp == 1)
+        {
+            imageMove.setImageResource(R.drawable.cat1);
+        }
+        else if (temp == 2)
+        {
+            imageMove.setImageResource(R.drawable.cat2);
+        }
     }
 
     private void configureQuitButton()
