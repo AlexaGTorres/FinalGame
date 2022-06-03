@@ -13,7 +13,7 @@ public class MainActivity extends AppCompatActivity
 {
     ImageView img;
     Button b;
-    int flag = 0;
+    public static int flag = 0;
 
     @Override
     protected void onCreate(Bundle savedInstanceState)
@@ -32,7 +32,7 @@ public class MainActivity extends AppCompatActivity
             {
                 if (flag == 0)
                 {
-                    img.setImageResource(R.drawable.cat);//temp image
+                    img.setImageResource(R.drawable.cat);
                     flag = 1;
                 }
                 else if (flag == 1)
