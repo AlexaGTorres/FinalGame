@@ -20,6 +20,8 @@ public class PlayScreen extends AppCompatActivity
     private float y;
     int temp = MainActivity.flag-1;
 
+    ImageView arr[];
+
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
@@ -60,6 +62,8 @@ public class PlayScreen extends AppCompatActivity
         {
             imageMove.setImageResource(R.drawable.cat2);
         }
+
+
     }
 
     private void configureQuitButton()

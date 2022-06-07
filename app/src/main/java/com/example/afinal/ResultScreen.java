@@ -9,7 +9,6 @@ import android.widget.Button;
 
 public class ResultScreen extends AppCompatActivity
 {
-
     @Override
     protected void onCreate(Bundle savedInstanceState)
     {
